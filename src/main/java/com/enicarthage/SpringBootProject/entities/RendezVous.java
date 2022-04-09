@@ -10,12 +10,13 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 @Entity
+
 public class RendezVous {
 	@Id
 	 @GeneratedValue(strategy = GenerationType.AUTO)
-	 private long id_Rv;
-	private Date date_Rv;
-	private String heure_Rv;
+	 private long idRv;
+	private Date dateRv;
+	private String heureRv;
 	@ManyToOne
 	private Medecin medecin;
 	@ManyToOne

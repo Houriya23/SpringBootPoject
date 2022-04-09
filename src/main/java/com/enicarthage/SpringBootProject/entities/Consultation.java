@@ -14,10 +14,10 @@ import lombok.NoArgsConstructor;
 public class Consultation {
 	@Id
 	 @GeneratedValue(strategy = GenerationType.AUTO)
-	private long id_Cons;
-	private Date date_Cons;
-	private String rapport_Cons;
-	private double prix_Cons;
-	@OneToOne 
-	private RendezVous rendezvous;
+	private long idCons;
+	private Date dateCons;
+	private String rapportCons;
+	private double prixCons;
+	//@OneToOne 
+	//private RendezVous rendezvous;
 }
