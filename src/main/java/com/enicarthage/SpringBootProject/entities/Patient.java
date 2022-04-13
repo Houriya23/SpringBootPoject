@@ -1,12 +1,24 @@
 package com.enicarthage.SpringBootProject.entities;
 
+import java.util.List;
+import java.util.Set;
+
+import javax.persistence.CascadeType;
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
+import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 import javax.validation.constraints.NotBlank;
 
 @Entity
 @DiscriminatorValue(value = "P")
 public class Patient extends Utilisateur {
+
+	@OneToMany( cascade =CascadeType.ALL, mappedBy = "patient")
+	private Set<RendezVous> rendezvous;
+	
+	//@ManyToMany(cascade = CascadeType.ALL)
+	//private List<Medecin> medecin;
 
 	public Patient() {
 		super();

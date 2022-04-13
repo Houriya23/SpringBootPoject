@@ -18,6 +18,6 @@ public class Consultation {
 	private Date dateCons;
 	private String rapportCons;
 	private double prixCons;
-	//@OneToOne 
-	//private RendezVous rendezvous;
+	@OneToOne (mappedBy = "consultation")
+	private RendezVous rendezvous;
 }
