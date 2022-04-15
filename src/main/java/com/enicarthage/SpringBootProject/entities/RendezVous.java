@@ -23,9 +23,9 @@ public class RendezVous {
 	private Date dateRv;
 	private String heureRv;
 
-	@ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-	@JoinColumn(name = "patient_id_user")
-	private Patient patient;
+	//@ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+	//@JoinColumn(name = "patient_id_user")
+	//private Patient patient;
 
 	@ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
 	@JoinColumn(name = "medecin_id_user")
